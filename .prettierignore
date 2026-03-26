@@ -1,0 +1,2 @@
+# Ignore Django tempaltes and let djlint do it
+**/templates/

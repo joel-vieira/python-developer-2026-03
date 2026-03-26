@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {% block title %}
+        My Site
+      {% endblock title %}
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}" />
+    <link rel="icon"
+          href="{% static 'blog/images/favicon.ico' %}"
+          type="image/x-icon" />
+    <link rel="icon"
+          href="{% static 'blog/images/icon.svg' %}"
+          type="image/svg+xml">
+    <link rel="apple-touch-icon"
+          href="{% static 'blog/images/apple-touch-icon.png' %}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description"
+          content="Simple example application for loading data in Django" />
+    <meta name="keywords"
+          content="django, blog, example, python, web development" />
+  </head>
+  <body>
+    <header class="header">
+    </header>
+    <main>
+      <div class="container">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </main>
+    <footer class="footer">
+      <small class="copyright">© {% now "Y" %} silverorange, Inc. — All rights reserved.</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+[project]
+name = "silverorange-python-exercise"
+version = "0.1.0"
+description = "A simple app to show your skills"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=6.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "djlint>=1.36.4",
+    "ruff>=0.15.7",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "ANN"]
+ignore = ["E501"]  # Let formatter handle line length
+
+[tool.djlint]
+profile = "django"
+indent = 2
