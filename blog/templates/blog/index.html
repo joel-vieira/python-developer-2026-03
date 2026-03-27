@@ -4,11 +4,14 @@
 {% endblock title %}
 {% block content %}
   {% if published_posts %}
-    <ul>
+    <h1 class="page-title">Our latest posts</h1>
+
+    <ul class="posts-list">
       {% for post in published_posts %}
         <li>
           <a href="{% url 'blog:detail' post.id %}">
-            <strong>{{ post.title }}</strong>, {{ post.author.full_name }}
+            <p class="post-title">{{ post.title }}</p>
+            <p class="post-author">{{ post.author.full_name }}</p>
           </a>
         </li>
       {% endfor %}

@@ -4,10 +4,10 @@
   Post: {{ post.title }}
 {% endblock title %}
 {% block content %}
-  <h1>{{ post.title }}</h1>
-  <p>By {{ post.author.full_name }}</p>
+  <h1 class="page-title">{{ post.title }}</h1>
+  <p class="page-subtitle">By {{ post.author.full_name }}</p>
 
-  <p>{{ post.body | markdownify}}</p>
+  <p class="post-body">{{ post.body | markdownify}}</p>
 
-  <a href="{% url 'blog:index' %}">Back to posts list</a>
+  <a class="nav-link" href="{% url 'blog:index' %}">Back to posts list</a>
 {% endblock content %}

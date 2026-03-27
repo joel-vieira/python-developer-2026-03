@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: Cochin, serif;
   color: #444;
   min-height: 100vh;
 }
@@ -41,4 +41,53 @@ main {
   margin: 0 auto;
   max-width: 32rem;
   padding: 2rem 1rem;
+}
+
+.page-title {
+  font-size: 2rem;
+}
+
+.page-subtitle {
+  margin-bottom: 36px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid;
+}
+
+.posts-list {
+  margin-top: 52px;
+  list-style: none;
+  padding: 0;
+}
+
+.posts-list li {
+  border-top: 1px solid;
+  margin-bottom: 16px;
+}
+
+.posts-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-title {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.post-author {
+  font-size: 0.9rem;
+}
+
+.post-body {
+  font-size: 1rem;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
