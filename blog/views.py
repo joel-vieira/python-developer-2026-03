@@ -13,6 +13,10 @@ class IndexView(generic.ListView):
     def get_queryset(self) -> QuerySet:
         return Post.objects.order_by("-published_at")
 
+class DetailView(generic.DetailView):
+    model = Post
+    template_name = "blog/detail.html"
+
 def welcome(request: HttpRequest) -> HttpResponse:
 
     return render(request, "blog/welcome.html")

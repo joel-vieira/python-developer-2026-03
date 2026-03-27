@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "django>=6.0.3",
+    "django-markdownify>=0.9.6",
 ]
 
 [dependency-groups]
